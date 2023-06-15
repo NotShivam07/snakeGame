@@ -1,0 +1,57 @@
+/* vmin=min(vh,vw) */
+/* vmax=max(vh,vw) */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=New+Tegomin&family=Noto+Serif+HK:wght@200&family=Press+Start+2P&family=Reem+Kufi+Fun&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background: url('../bg.jpg');
+    height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#score {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+#hiscoreBox {
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+#board{
+    background:linear-gradient(#a4fa9d, #ffff4e);
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background: linear-gradient(red,rgb(248, 241, 35));
+    border: .25vmin solid rgb(0, 0, 0);
+    transform:scale(1.08);
+    border-radius: 14px;
+}
+.snake{
+    background:linear-gradient(rgb(220, 120, 220),black);
+    border: .25vmin solid rgb(0, 0, 0);
+    border-radius: 14px;
+}
+.food{
+    background:linear-gradient(rgb(235, 148, 66),rgb(255, 255, 255));
+    border: 0.25vmin solid black;
+    border-radius: 40px;
+}
